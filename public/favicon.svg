@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#163C73"/>
+      <stop offset="1" stop-color="#09244D"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#68E58A"/>
+      <stop offset="1" stop-color="#38C978"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DDE3ED"/>
+      <stop offset="1" stop-color="#9DA9BC"/>
+    </linearGradient>
+    <linearGradient id="book1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22C7A8"/>
+      <stop offset="1" stop-color="#36A9D6"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-opacity=".22"/>
+    </filter>
+  </defs>
+
+  <!-- App background -->
+  <rect width="512" height="512" rx="72" fill="url(#bg)"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="300" cy="428" rx="108" ry="12" fill="#061A38" opacity=".55"/>
+
+  <!-- Motion lines -->
+  <g stroke="#7EA8E2" stroke-width="6" stroke-linecap="round" opacity=".65">
+    <path d="M92 376h54"/>
+    <path d="M78 394h72"/>
+    <path d="M96 412h54"/>
+  </g>
+
+  <!-- Laptop -->
+  <g filter="url(#shadow)">
+    <rect x="184" y="119" width="111" height="75" rx="9"
+          transform="rotate(-9 184 119)" fill="url(#screen)" stroke="#EAF0F8" stroke-width="5"/>
+    <circle cx="241" cy="145" r="8" fill="#F5F7FA"/>
+    <path d="M178 193h122l-12 10H190z" fill="#8F9BAF"/>
+  </g>
+
+  <!-- Plant -->
+  <g>
+    <path d="M355 213c-3-32 4-55 23-75" fill="none" stroke="#42C979" stroke-width="7" stroke-linecap="round"/>
+    <path d="M361 170c-27-18-34-35-30-52 22 5 35 19 30 52Z" fill="#59D77D"/>
+    <path d="M376 151c3-27 18-43 37-48 4 22-8 40-37 48Z" fill="#70E28B"/>
+    <path d="M374 181c14-22 31-29 51-26-8 20-25 29-51 26Z" fill="#43C978"/>
+  </g>
+
+  <!-- Headphones -->
+  <g fill="none" stroke="#56D6C2" stroke-width="13" stroke-linecap="round">
+    <path d="M381 177c0-38 62-38 62 0"/>
+    <path d="M381 178v37"/>
+    <path d="M443 178v37"/>
+  </g>
+  <rect x="374" y="205" width="20" height="38" rx="10" fill="#39B8AA"/>
+  <rect x="430" y="205" width="20" height="38" rx="10" fill="#39B8AA"/>
+
+  <!-- Smartphone -->
+  <g filter="url(#shadow)" transform="rotate(8 343 222)">
+    <rect x="314" y="165" width="57" height="108" rx="10" fill="#102B52" stroke="#E5EDF7" stroke-width="5"/>
+    <rect x="322" y="177" width="41" height="82" rx="5" fill="#17365F"/>
+    <rect x="334" y="183" width="17" height="4" rx="2" fill="#5C86C2"/>
+    <circle cx="342" cy="265" r="3" fill="#DCE6F3"/>
+  </g>
+
+  <!-- Books behind cart -->
+  <g filter="url(#shadow)">
+    <rect x="185" y="205" width="142" height="34" rx="7" fill="url(#book1)" transform="rotate(-4 185 205)"/>
+    <rect x="192" y="224" width="132" height="35" rx="6" fill="#F4F5F7" stroke="#D6DDE7" stroke-width="3" transform="rotate(-2 192 224)"/>
+    <rect x="190" y="246" width="145" height="37" rx="7" fill="#F58B32" transform="rotate(-7 190 246)"/>
+    <path d="M205 254h107" stroke="#FFB15C" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cart handle -->
+  <path d="M83 139h48c10 0 17 6 20 17l38 178"
+        fill="none" stroke="#FFFFFF" stroke-width="22"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cart basket -->
+  <path d="M174 242h218l-19 101c-3 14-15 24-30 24H194c-13 0-24-9-27-22l-22-103Z"
+        fill="#FFFFFF" filter="url(#shadow)"/>
+
+  <!-- Basket inner highlight -->
+  <path d="M178 250h205l-12 63c-3 12-12 18-24 18H194c-10 0-17-6-20-17Z"
+        fill="#F7F9FC"/>
+
+  <!-- Basket slots -->
+  <g fill="#12325F">
+    <rect x="190" y="278" width="19" height="58" rx="7" transform="rotate(-7 190 278)"/>
+    <rect x="241" y="277" width="19" height="60" rx="7"/>
+    <rect x="293" y="277" width="19" height="60" rx="7"/>
+    <rect x="345" y="275" width="19" height="59" rx="7" transform="rotate(7 345 275)"/>
+  </g>
+
+  <!-- Cart lower frame -->
+  <path d="M174 365h198"
+        fill="none" stroke="#FFFFFF" stroke-width="22" stroke-linecap="round"/>
+
+  <!-- Wheels -->
+  <g>
+    <circle cx="211" cy="414" r="27" fill="url(#green)"/>
+    <circle cx="211" cy="414" r="9" fill="#12325F"/>
+    <circle cx="354" cy="414" r="27" fill="url(#green)"/>
+    <circle cx="354" cy="414" r="9" fill="#12325F"/>
+  </g>
+
+  <!-- Campus marketplace tag -->
+  <g transform="rotate(18 105 218)" filter="url(#shadow)">
+    <path d="M70 187h45l27 27v57c0 8-6 14-14 14H70c-8 0-14-6-14-14v-70c0-8 6-14 14-14Z"
+          fill="url(#green)"/>
+    <circle cx="76" cy="204" r="5" fill="#12325F"/>
+    <!-- Graduation cap symbol -->
+    <path d="M80 229l25-13 25 13-25 13-25-13Z"
+          fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M89 235v10c0 8 25 8 25 0v-10"
+          fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M127 228v13" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>
